@@ -1,7 +1,7 @@
 import torch #Model hesaplarını yapacak kütüphane
 import torch.nn as nn #İçindeki model parçaları kutusunu (nn = neural network) alır ve kısaca nn diye çağıracağımızı söyler
 
-metin = "merhaba" #modelin çalışacağı kelime
+metin = "anaconda" #modelin çalışacağı kelime
 harfler = sorted(set(metin)) #kelimedeki harflerin alfabetik listesi
 harf_numara = {h: i for i, h in enumerate(harfler)} #Her harfe sırayla bir numara veriyoruz alfabetik olarak sıraladıktan sonra 
 numara_harf = {i: h for h, i in harf_numara.items()} #Burda da tam tersini yapıyoruz numaraları harfe çeviriyoruz model sonunda numara üretecek biz onu tekrar harfe çevirmek için buna ihtiyaç duyacaz
